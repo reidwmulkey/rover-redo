@@ -1,0 +1,77 @@
+.width-100 {
+	width: 100%;
+}
+
+.md-toolbar-button {
+	margin-top:17px;
+}
+.md-content {
+	top:64px !important;
+}
+
+.full-content {
+	height:100vh; 
+	width: 100vw; 
+	/*overflow-y: hidden; 
+	overflow-x: hidden;*/
+	display: table;
+}
+
+.main-content {
+	height: 89%;
+}
+
+.md-accent {
+	color:rgb(255,143,0);
+}
+.md-primary {
+	color:rgb(0,137,123);
+}
+
+.min-width-500 {
+	min-width:500px;
+}
+.max-width-600 {
+	max-width:600px;
+}
+
+.sitter-img {
+	flex: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	max-height:100px;
+	max-width:100px;
+	width:150px;
+}
+
+.sitter-name {
+	padding-left:030px;
+}
+
+.search-button {
+	margin-top:17px !important;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.padding-content {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.padding-md {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.padding-lg {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.average-stay-rating-slider {
+	max-width: 120px;
+}

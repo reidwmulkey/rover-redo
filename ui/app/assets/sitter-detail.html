@@ -1,0 +1,53 @@
+<md-dialog aria-label="Item details" style="width:100%; height:100%;">
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<h2>Sitter Details</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" ng-click="close()">
+				X
+			</md-button>
+		</div>
+	</md-toolbar>
+	<md-dialog-content class="padding-content" class="min-width-500">
+	
+		<div class="center-align">
+			<img ng-src="{{sitter.imageUrl}}" class="max-width-600">
+		</div>
+		
+		<h2 class="md-primary">{{sitter.name}}</h2>
+		<br>
+		
+		<div>
+			<span>Average Stay Rating:</span> {{sitter.averageStayRating.toFixed(2)}}
+		</div>
+		<div>
+			{{sitter.email}}
+		</div>
+		<div>
+			{{sitter.phoneNumber}}
+		</div>
+		
+		<h2 class="md-primary">Reviews</h2>
+		<md-divider>
+		
+		<div ng-show="sitter.sitterReviews.length === 0">
+			This sitter has not been reviewed.
+		</div>
+		
+		<div ng-show="sitter.sitterReviews.length > 0">
+			<md-list>
+				<md-list-item class="md-2-line" ng-repeat="sitterReview in sitter.sitterReviews">
+					<div class="md-list-item-text">
+						<br>
+						<h3 class="md-accent">{{sitterReview.dogs}}:</h3>
+						<br>
+						<p>{{sitterReview.text}}</p>
+						<br>
+					</div>
+					<md-divider>
+				</md-list-item>
+			</md-list>
+		</div>
+		
+	</md-dialog-content>
+</md-dialog>
